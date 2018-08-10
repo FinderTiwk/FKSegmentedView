@@ -7,16 +7,16 @@
 //  Created by FinderTiwk on 23/10/2017.
 //  Copyright © 2017 _Finder丶Tiwk. All rights reserved.
 //
-#import "FTSegmentedView.h"
+#import "FKSegmentedView.h"
 
-@interface FTSegmentedView ()
+@interface FKSegmentedView ()
 @property (nonatomic,readwrite,assign) NSUInteger selectedIndex;
 @property (nonatomic,weak) UIView *cursorView;
 @property (nonatomic,weak) UIScrollView *scrollView;
 @property (nonatomic,weak) UIButton *selectedButton;
 @end
 
-@implementation FTSegmentedView
+@implementation FKSegmentedView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if ((self = [super initWithFrame:frame])) {

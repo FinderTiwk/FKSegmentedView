@@ -8,12 +8,12 @@
 //  Copyright © 2017 _Finder丶Tiwk. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-@protocol FTSegmentedViewDelegate <NSObject>
+@protocol FKSegmentedView <NSObject>
 //点击了第几个按钮
 - (void)segmentViewDidSelectedAtIndex:(NSUInteger)index;
 @end
 
-@interface FTSegmentedView : UIView
+@interface FKSegmentedView : UIView
 
 @property (nonatomic,readonly) NSUInteger selectedIndex;
 
@@ -25,7 +25,7 @@
                animation:(BOOL)animation;
 
 //标题按钮点击事件回调,代理,block二选一
-@property (nonatomic,assign) id<FTSegmentedViewDelegate> delegate;
+@property (nonatomic,assign) id<FKSegmentedView> delegate;
 @property (nonatomic,copy) void (^selectCallback)(NSUInteger index);
 
 #pragma mark - 偏好设置
